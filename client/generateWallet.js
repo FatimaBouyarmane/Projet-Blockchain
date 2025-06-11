@@ -1,7 +1,7 @@
 const crypto = require("crypto");
 const fs = require("fs");
 
-// Generate a wallet (ECDSA key pair)
+// Generate a wallet
 function generateWallet() {
     const { publicKey, privateKey } = crypto.generateKeyPairSync("ec", {
         namedCurve: "secp256k1",
@@ -17,7 +17,6 @@ function generateWallet() {
     console.log(" Public key saved to public.pem");
 }
 
-// Sign a transaction using your private key
 function signTransaction(txPath = "tx.json") {
     const privateKey = fs.readFileSync("private.pem", "utf8");
     const tx = JSON.parse(fs.readFileSync(txPath));
@@ -47,7 +46,7 @@ const arg = process.argv[2];
 if (arg === "gen") {
     generateWallet();
 } else if (arg === "sign") {
-    signTransaction(process.argv[3]); // pass tx.json file path
+    signTransaction(process.argv[3]); 
 } else {
     console.log("Usage:");
     console.log("  node wallet.js gen       # generate new wallet");

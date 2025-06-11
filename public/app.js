@@ -17,7 +17,7 @@ class BlockchainDashboard {
             await this.sendTransaction();
         });
         
-        // Add manual mine button after the transaction section
+        // Adding manual mine button after the transaction section
         const mineButton = document.createElement('button');
         mineButton.textContent = 'Mine Block';
         mineButton.onclick = () => this.mineBlock();

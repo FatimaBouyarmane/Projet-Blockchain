@@ -1,4 +1,3 @@
-// client/minerBot.js
 const crypto = require("crypto");
 const fetch = require("node-fetch");
 const fs = require("fs");
@@ -88,5 +87,4 @@ async function submitBlock(block) {
     }
 }
 
-// Run mining loop every X seconds (short for testing, 600s = 10 mins in real case)
 setInterval(mineBlock, 30 * 1000); // mine every 30s
