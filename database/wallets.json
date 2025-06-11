@@ -1,7 +1,7 @@
 [
   {
     "address": "04a34b5f9c8d7e123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
-    "balance": 898.9599999999999
+    "balance": 876.9599999999999
   },
   {
     "address": "04987cdef123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef01",
@@ -9,10 +9,14 @@
   },
   {
     "address": "genesis",
-    "balance": 999900
+    "balance": 999869.03
   },
   {
     "address": "system_miner",
-    "balance": 564.0699999999999
+    "balance": 616.0699999999999
+  },
+  {
+    "address": "04987cdef123456789abcdef0123456789abcdef0123456789eefdef0123456789abcdef01",
+    "balance": 50.97
   }
 ]

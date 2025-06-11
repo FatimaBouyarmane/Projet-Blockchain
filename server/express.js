@@ -94,10 +94,11 @@ app.get('/wallets', async (req, res) => {
 app.get('/blocks', async (req, res) => {
     try {
         const blocks = await getAllBlocks();
-        res.json(blocks);
+        console.log(`Returning ${blocks.length} blocks`);
+        res.json(blocks || []);
     } catch (error) {
         console.error('Error fetching blocks:', error);
-        res.status(500).json({ error: 'Failed to fetch blocks' });
+        res.status(500).json({ error: 'Failed to fetch blocks', blocks: [] });
     }
 });
 

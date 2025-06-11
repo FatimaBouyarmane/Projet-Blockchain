@@ -109,7 +109,6 @@ const getAllBlocks = async () => {
     } catch (error) {
         console.error('Error loading all blocks:', error);
         return [];
-        return [];
     }
 };
 

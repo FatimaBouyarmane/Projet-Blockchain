@@ -2,10 +2,10 @@
   {
     "sender": "genesis",
     "receiver": "04987cdef123456789abcdef0123456789abcdef0123456789eefdef0123456789abcdef01",
-    "amount": 29.97,
-    "fees": 1,
-    "signature": "auto_7c59124dce753d8764b8c3bf4ecd0d7d",
-    "timestamp": 1749654879260,
-    "id": "f9df15feec77ff4ce89ce448d7c07a2cf58f5f42e8107907fc49aa86cc57efda"
+    "amount": 20,
+    "fees": 5,
+    "signature": "auto_d743f0ab30a812c439e5bc49290c7c51",
+    "timestamp": 1749681491330,
+    "id": "tx_1749681491333_ec1n429ot"
   }
 ]

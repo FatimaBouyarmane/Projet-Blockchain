@@ -17,7 +17,6 @@ class BlockchainDashboard {
             await this.sendTransaction();
         });
         
-        // Adding manual mine button after the transaction section
         const mineButton = document.createElement('button');
         mineButton.textContent = 'Mine Block';
         mineButton.onclick = () => this.mineBlock();
@@ -54,12 +53,26 @@ class BlockchainDashboard {
     async loadBlocks() {
         try {
             const response = await fetch(`${this.baseUrl}/blocks`);
-            if (!response.ok) throw new Error('Failed to fetch blocks');
+            console.log('Blocks response status:', response.status);
+            
+            if (!response.ok) {
+                console.error('Response not ok:', response.status, response.statusText);
+                throw new Error(`Failed to fetch blocks: ${response.status}`);
+            }
+            
             const blocks = await response.json();
+            console.log('Loaded blocks:', blocks.length, 'blocks');
             this.displayBlocks(blocks);
             return blocks;
         } catch (error) {
             console.error('Error loading blocks:', error);
+            // Try to get the actual error response
+            try {
+                const errorText = await response.text();
+                console.error('Error response body:', errorText);
+            } catch (e) {
+                console.error('Could not read error response');
+            }
             this.displayBlocks([]);
             return [];
         }
@@ -195,7 +208,6 @@ class BlockchainDashboard {
             return;
         }
 
-        // Auto-generate signature using crypto utilities
         const txData = { sender, receiver, amount, fees };
         const signature = await CryptoUtils.generateSignature(txData);
 
@@ -293,7 +305,6 @@ class BlockchainDashboard {
         messageEl.textContent = message;
         messageEl.className = `message ${type}`;
 
-        // Auto-hide after 3 seconds
         setTimeout(() => {
             if (messageEl.parentNode) {
                 messageEl.parentNode.removeChild(messageEl);
@@ -302,14 +313,12 @@ class BlockchainDashboard {
     }
 
     startPolling() {
-        // Refresh data every 30 seconds
         setInterval(() => {
             this.loadData();
         }, 30000);
     }
 }
 
-// Initialize dashboard when page loads
 document.addEventListener('DOMContentLoaded', () => {
     new BlockchainDashboard();
 });
