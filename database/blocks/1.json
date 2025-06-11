@@ -1,0 +1,39 @@
+{
+  "height": 1,
+  "hash": "0000b895f04e5ec7c0d5537e1d86295d17be4b1202542e510cd50a61688b9d06",
+  "previousHash": "000000genesis",
+  "timestamp": 1749651953482,
+  "difficulty": 4,
+  "blockReward": 50,
+  "nonce": 105776,
+  "miner": "system_miner",
+  "transactions": [
+    {
+      "id": "coinbase_1749651953482",
+      "sender": null,
+      "receiver": "system_miner",
+      "amount": 50,
+      "fees": 0,
+      "timestamp": 1749651953482,
+      "type": "coinbase"
+    },
+    {
+      "sender": "04a34b5f9c8d7e123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+      "receiver": "04987cdef123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef01",
+      "amount": 10,
+      "fees": 1.07,
+      "signature": "3045022100aabbccddeeff00112233445566778899aabbccddeeff00112233445566778899022011223344556677889900aabbccddeeff",
+      "timestamp": 1749651414762,
+      "id": "2bc031b00bf3b5e3c9bb8983dea90b280ac80bdbf61d15d6e3e10cfa48d39fc7"
+    },
+    {
+      "sender": "04a34b5f9c8d7e123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+      "receiver": "04987cdef123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef01",
+      "amount": 55,
+      "fees": 6,
+      "signature": "3045022100aabbccddeeff00112233445566778899aabbccddeeff00112233445566778899022011223344556677889900aabbccddeefd",
+      "timestamp": 1749651507108,
+      "id": "b50ff4dc9ae297871c30f3654bd6a95d797ce6625ce0969adfd9a53a1559112a"
+    }
+  ]
+}

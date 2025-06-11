@@ -1,0 +1,30 @@
+{
+  "height": 3,
+  "hash": "00006028ed14627d8936de68be8054aa684715e50aedf78c7b81f833c4528418",
+  "previousHash": "000090153be8ad3ef97a46468b434d75441e6cad67bd1a562070419767756ab8",
+  "timestamp": 1749652093951,
+  "difficulty": 4,
+  "blockReward": 50,
+  "nonce": 6836,
+  "miner": "system_miner",
+  "transactions": [
+    {
+      "id": "coinbase_1749652093951",
+      "sender": null,
+      "receiver": "system_miner",
+      "amount": 50,
+      "fees": 0,
+      "timestamp": 1749652093951,
+      "type": "coinbase"
+    },
+    {
+      "sender": "04a34b5f9c8d7e123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef",
+      "receiver": "04987cdef123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef01",
+      "amount": 12,
+      "fees": 1,
+      "signature": "auto_064f92f1a5e94c45ad5e45dd9063e652",
+      "timestamp": 1749652093700,
+      "id": "abb1c50af3ce831de94aa71d331097dd285c5804d16537a53bc6f6e3165d07c0"
+    }
+  ]
+}
