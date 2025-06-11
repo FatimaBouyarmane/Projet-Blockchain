@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "sender": "genesis",
+    "receiver": "04987cdef123456789abcdef0123456789abcdef0123456789eefdef0123456789abcdef01",
+    "amount": 29.97,
+    "fees": 1,
+    "signature": "auto_7c59124dce753d8764b8c3bf4ecd0d7d",
+    "timestamp": 1749654879260,
+    "id": "f9df15feec77ff4ce89ce448d7c07a2cf58f5f42e8107907fc49aa86cc57efda"
+  }
+]
